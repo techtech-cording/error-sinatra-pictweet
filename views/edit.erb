@@ -1,0 +1,9 @@
+<div class='post-form'>
+  <form action="/tweets/<%= @tweet.id %>" method='post' class='form'>
+    <h3>編集する</h3>
+    <input type="text" name="image" placeholder='Image URL' value="<%= @tweet.image %>">
+    <input type='hidden' name="_method" value="patch">
+    <textarea name="text" placeholder='text'><%= @tweet.text %></textarea>
+    <input type="submit" value='SEND'>
+  </form>
+</div>
