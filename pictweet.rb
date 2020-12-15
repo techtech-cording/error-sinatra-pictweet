@@ -13,7 +13,7 @@ get "/" do
   erb :index
 end
 
-get "/tweets/new" do
+get "/tweet/new" do
   erb :new
 end
 
