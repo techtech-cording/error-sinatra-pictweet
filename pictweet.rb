@@ -18,6 +18,7 @@ get "/tweets/new" do
 end
 
 post "/tweets" do
+  binding.pry
   Tweet.create(params)
   redirect '/'
 end
